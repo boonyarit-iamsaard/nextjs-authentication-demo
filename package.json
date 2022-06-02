@@ -1,0 +1,41 @@
+{
+  "name": "nextjs-authentication-demo",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=14.0.0",
+    "yarn": ">=1.22.0",
+    "npm": "please-use-yarn"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write .",
+    "check:types": "tsc --pretty --noEmit",
+    "check:format": "prettier --check .",
+    "check:lint": "eslint . --ext ts --ext tsx --ext js",
+    "check:all": "yarn check:format && yarn check:lint && yarn check:types && yarn build",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "next": "12.1.6",
+    "react": "18.1.0",
+    "react-dom": "18.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "17.0.38",
+    "@types/react": "18.0.10",
+    "@types/react-dom": "18.0.5",
+    "@typescript-eslint/eslint-plugin": "^5.27.0",
+    "@typescript-eslint/parser": "^5.27.0",
+    "eslint": "8.16.0",
+    "eslint-config-next": "12.1.6",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.6.2",
+    "typescript": "4.7.2",
+    "husky": "^8.0.0"
+  }
+}
